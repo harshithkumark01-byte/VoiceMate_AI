@@ -1,120 +1,145 @@
 # 🎙️ VoiceMate AI
-### Intelligent Multilingual Customer Support Assistant
 
-VoiceMate AI is a Python-based multilingual voice assistant that helps users communicate with an AI-powered customer support system using natural speech.
+### Multilingual AI-Powered Customer Support Assistant
 
-Users can record their voice, convert speech into text, receive intelligent responses and listen to AI-generated voice replies.
+VoiceMate AI is an intelligent voice-based customer support assistant that allows users to communicate naturally and receive AI-generated responses. It combines speech recognition, generative AI and text-to-speech technology to create an interactive multilingual experience.
 
-## 🚀 Features
+## 🚀 Project Overview
 
-- Speech-to-Text using Gnani AI Prisma.
-- AI-powered response generation using Google Gemini.
-- Text-to-Speech using Gnani AI Timbre.
-- Multilingual language selection.
-- Voice recording and playback.
-- Text-based voice generation.
-- Interactive Streamlit interface.
+VoiceMate AI converts spoken questions into text, processes them using Google Gemini and generates intelligent responses. Users can also listen to AI-generated voice responses.
 
-## 🌐 Supported Languages
+The application includes a modern dark-themed Streamlit dashboard.
 
-- English
-- Kannada
-- Hindi
-- Tamil
-- Telugu
+## ✨ Key Features
+
+- 🎤 **Speech-to-Text:** Converts spoken audio into text using Gnani AI.
+- 🤖 **AI Responses:** Generates intelligent answers using Google Gemini.
+- 🔊 **Text-to-Speech:** Converts AI-generated text into speech using Gnani AI.
+- 🌐 **Multilingual Support:** Language options for English, Kannada, Hindi, Tamil and Telugu.
+- 💬 **Text Interaction:** Allows users to ask questions without recording audio.
+- 🎨 **Modern Dashboard:** Professional dark-themed Streamlit interface.
+- 🔌 **API Status:** Displays API connection information.
+
+*Note: Language options are available; individual language accuracy and voice support should be validated.*
 
 ## 🛠️ Technologies Used
 
-- Python
-- Streamlit
-- Gnani AI Prisma
-- Gnani AI Timbre
-- Google Gemini API
-- Requests
-- Python Dotenv
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Streamlit | Web application interface |
+| Gnani AI | Speech-to-Text and Text-to-Speech |
+| Google Gemini | AI response generation |
+| Pandas | Data handling |
+| Python Dotenv | Environment variable management |
+| Git & GitHub | Version control |
 
-## ⚙️ Project Structure
+## 📁 Project Structure
 
 ```text
 VoiceMate_AI/
+│
 ├── app.py
+├── ai_assistant.py
 ├── speech_to_text.py
 ├── text_to_speech.py
-├── ai_assistant.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 └── .env
 ```
 
-## 💻 Installation and Setup
+## ⚙️ Installation and Setup
 
-1. Clone the repository:
+### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/harshithkumark01-byte/VoiceMate_AI.git
 ```
 
-2. Open the project folder:
+### 2. Navigate to the Project Folder
 
 ```bash
 cd VoiceMate_AI
 ```
 
-3. Create a virtual environment:
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-4. Activate it on Windows:
+### 4. Activate Virtual Environment
 
-```bash
-venv\Scripts\activate
+For Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
 ```
 
-5. Install dependencies:
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Create a `.env` file in the project folder and configure your API keys:
+### 6. Configure API Keys
+
+Create a `.env` file in the project root directory.
+
+Add your API keys:
 
 ```env
 GNANI_API_KEY=your_gnani_api_key
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Never upload your actual API keys to GitHub.
+Replace the placeholder values with your actual API keys.
 
-7. Run the application:
+**Important:** Never upload your `.env` file or expose your API keys publicly.
+
+### 7. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-## 🔄 How It Works
+The application will open in your browser.
 
-1. The user selects a preferred language.
-2. The user records a voice message.
-3. Gnani AI Prisma converts speech into text.
-4. Google Gemini generates an intelligent response.
-5. Gnani AI Timbre converts the response into speech.
-6. The user listens to the generated voice response.
+## 🖥️ Application Workflow
 
-## 🎯 Objective
+1. Select your preferred language.
+2. Record your voice using the microphone.
+3. Click **Process My Voice**.
+4. Gnani AI converts speech into text.
+5. Google Gemini processes the recognized text.
+6. VoiceMate AI displays the generated response.
+7. Click **Listen to AI Response** to hear the answer.
 
-The objective of VoiceMate AI is to demonstrate how speech recognition, generative AI and speech synthesis can work together to create an accessible multilingual customer support experience.
+Users can also interact through text input and use the standalone Text-to-Speech feature.
 
-## 👨‍💻 Developer
+## 📸 Application Screenshots
 
-**Harshith Kumar K**
+### VoiceMate AI Dashboard
 
-Project developed for the Great Indian AI Internship Challenge.
+![VoiceMate AI Dashboard](dashboard.png)
+## 🔮 Future Enhancements
 
-## 🙏 Acknowledgements
+- Improved multilingual conversation accuracy.
+- Conversation history and session management.
+- User authentication.
+- Customer support analytics dashboard.
+- Cloud deployment.
+- Integration with customer support platforms.
 
-- Gnani AI
-- Google Gemini
-- Streamlit
+## 👨‍💻 Author
+
+**Harshith Kumar K.**
+
+Aspiring Data Scientist | Python | SQL | AI & Machine Learning
+
+GitHub: [harshithkumark01-byte](https://github.com/harshithkumark01-byte)
+
+## 📄 License
+
+This project is developed for educational and internship purposes.
