@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+python-dotenv
+gnani-vachana
+transformers
+google-genai
